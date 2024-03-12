@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -258,7 +260,115 @@ namespace ExerciciosTI20N
             return "Pares: " + par + "\nÍmpares: " + impar;
         }//fim do método
 
+        //Exercicio 17: Faça um programa que peça ao usuario um numero e imprima o dobro desse numero.
+        public int ExercicioDezessete(int num)
+        {
+            int resultado = 0;
 
+            resultado = num * 2;
 
+            return resultado;
+        }
+
+        //Exercicio 18: Faça um programa que peça ao usuario dois numeros e imprima a media deles.
+        public double ExercicioDezoito( double num1, double num2)
+        {
+            double media = 0;
+
+            media = (num1 + num2) / 2;
+
+            return media;
+        }
+
+        //Exercicio 19: Faça um programa que converta a temperatura de Celsius para Fahrenheit. A formula é F = C * 9/5 + 32.
+        public double ExercicioDezenove(double celsius)
+        {
+            double fahrenheit = 0;
+
+            fahrenheit = celsius * 9 / 5 + 32;
+
+            return fahrenheit;
+        }
+
+        //Exercicio 20: Faça um programa que peça o raio de um circulo e imprima a area. A formula é A = pi * raio^2.
+
+        public double ExercicioVinte(double raio)
+        {
+            double area = 0;
+
+            area = Math.PI * raio * raio; //no lugar de "raio * raio;" poderia colocar "Math.pow(raio, 2);" para fazer a operação da potencia.
+
+            return area;
+        }
+        
+        //Exercicio 21: Faça um programa que peça um numero e imprima seu quadrado.
+        public int ExercicioVinteUm(int num)
+        {
+            int resultado = 0;
+
+            resultado = num * num;
+
+            return resultado;
+        }
+
+        //Exercicio 22: Faça um programa que peça dois numeros e imprima o maior deles
+        public int ExercicioVinteDois(int num3, int num4)
+        {
+            if(num3 > num4)
+            {
+                return num3;
+            }
+            else
+            {
+                return num4;
+            }
+        }
+
+        //Exercicio 23: Faça um programa que peça dois numeros e imprima "São iguais" se forem iguais e "São diferentes" se forem diferentes
+        public string ExercicioVinteTres(int num3,int num4)
+        {
+
+            if(num3 != num4)
+            {
+                return "São diferentes";
+            }
+            else
+            {
+                return "São iguais";
+            }
+        }
+
+        //Exericio 24: Faça um porgrama que peça a idade do usario e imprima se ele é maior ou menor de idade
+        public string ExercicioVinteQuatro(int num)
+        {
+            if(num < 18)
+            {
+                return "Menor de idade";
+            }
+            else
+            {
+                return "Maior de idade";
+            }
+        }
+
+        //Exercicio 25: Faça um programa que peça dois numeros e imprima o menor deles 
+        public int ExercicioVinteCinco(int num3, int num4)
+        {
+            if (num3 < num4)
+            {
+                return num3;
+            }
+            else
+            {
+                return num4;
+            }
+        }
+
+        //Exercicio 26: Faça um programa que peça a altura e o peso de uma pessoa e calcule o IMC(Indice de Massa Corporal)! A formula é IMC= peso/altura^2
+
+        public double ExercicioVinteSeis(double peso, double altura)
+        {
+            return peso / (altura * altura);
+        } 
     }//fim da classe
 }//fim do projeto
