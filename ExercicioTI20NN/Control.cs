@@ -46,7 +46,19 @@ namespace ExerciciosTI20N
                               "25. Exercício 25\n" +
                               "26. Exercício 26\n" +
                               "27. Exercício 27\n" +
-                              "28. Exercício 28");
+                              "28. Exercício 28\n" +
+                              "29. Exercício 29\n" +
+                              "30. Exercício 30\n" +
+                              "31. Exercício 31\n" +
+                              "32. Exercício 32\n" +
+                              "33. Exercício 33\n" +
+                              "34. Exercício 34\n" +
+                              "35. Exercício 35\n" +
+                              "36. Exercício 36\n" +
+                              "37. Exercício 37\n" +
+                              "38. Exercício 38\n" +
+                              "39. Exercício 39\n" +
+                              "40. Exercício 40");
 
         }//fim do menu
 
@@ -219,8 +231,98 @@ namespace ExerciciosTI20N
 
                         Console.WriteLine("O IMC é: " + modelo.ExercicioVinteSeis(peso, altura));
                         break;
+                    case 27:
+                        Console.WriteLine("Informe a idade em dias: ");
+                        int dia = Convert.ToInt32(Console.ReadLine());
 
+                        Console.WriteLine("Informe a idade em meses: ");
+                        int mes = Convert.ToInt32(Console.ReadLine());
 
+                        Console.WriteLine("Informe a idade em dias: ");
+                        int ano = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("O ano expresso somente em dias é de: " + modelo.ExercicioVinteSete(dia, mes, ano));
+                        break;
+
+                    case 28:   
+                        Console.WriteLine("Informe seu salario fixo: ");
+                        double salarioFixo = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o valor de suas vendas: ");
+                        double vendas = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Seu salario final é de: " + modelo.ExercicioVinteOito(salarioFixo, vendas));
+                        break;
+                    case 29:
+                        Console.WriteLine("Os numeros negativos são: " + modelo.ExercicioVinteNove());
+                        break;
+                    case 30:
+                        Console.WriteLine("A soma dos numeros menores que 40 são: " + modelo.ExercicioTrinta());
+                        break;
+                    case 31:
+                        Console.WriteLine("A media da nota das salas: " + modelo.ExercicioTrintaUm());
+                        break;
+                    case 32:
+                        Console.WriteLine("Informe o tempo gasto na viagem: ");
+                        double tempo = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a velocidade media da viagem: ");
+                        double velociMedia = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaDois(tempo, velociMedia));
+                        break;
+                    case 33:
+                        Console.WriteLine("Informe a base do triangulo: ");
+                        double bases = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a altura do triangulo: ");
+                        altura = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaTres(bases, altura));
+                        break;
+                    case 34:
+                        Console.WriteLine("Informe o total de eleitores: ");
+                        double totalEleitores = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o total de votos validos: ");
+                        double votosValidos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o total de votos brancos: ");
+                        double votosBrancos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o total de votos nulos: ");
+                        double votosNulos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaQuatro(totalEleitores, votosValidos, votosBrancos, votosNulos));
+                        break;
+                    case 35:
+                        Console.WriteLine("Informe o valor de custo de fabrica: ");
+                        double custoFabrica = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaCinco(custoFabrica));
+                        break;
+                    case 36:
+                        Console.WriteLine("Informe o salario fixo : ");
+                        salarioFixo = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a comissao fixa: ");
+                        double comissaoFixa = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o numero de carros vendidos: ");
+                        double carrosVendidos = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o valor das vendas realizada: ");
+                        double valorVendas = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioTrintaSeis(salarioFixo, comissaoFixa, carrosVendidos, valorVendas));
+                        break;
+
+                    case 37:
+                        Console.WriteLine(modelo.ExercicioTrintaSete());
+                        break;
+                    case 38:
+                        Console.WriteLine(modelo.ExercicioTrintaOito());
+                        break;
                 }//fim do método
             } while (opcao != 0);
         }//fim do operacao

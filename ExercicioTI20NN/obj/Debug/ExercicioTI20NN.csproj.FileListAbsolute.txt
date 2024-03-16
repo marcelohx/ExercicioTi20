@@ -14,3 +14,11 @@ C:\Users\marcelo.hxavier\Source\Repos\ExercicioTI20NNovo\ExercicioTI20NN\obj\Deb
 C:\Users\marcelo.hxavier\Source\Repos\ExercicioTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.csproj.CoreCompileInputs.cache
 C:\Users\marcelo.hxavier\Source\Repos\ExercicioTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.exe
 C:\Users\marcelo.hxavier\Source\Repos\ExercicioTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.pdb
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.csproj.AssemblyReference.cache
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.csproj.SuggestedBindingRedirects.cache
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.csproj.CoreCompileInputs.cache
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.exe
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.pdb
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.exe.config
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.exe
+C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.pdb
