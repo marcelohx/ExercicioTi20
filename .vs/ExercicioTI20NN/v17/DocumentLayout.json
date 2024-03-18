@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5746427F-D1B4-45BE-9FEF-C8B86E6ADA81}|ExercicioTI20NN\\ExercicioTI20NN.csproj|c:\\users\\marce\\source\\repos\\exercicioti20\\exercicioti20nn\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5746427F-D1B4-45BE-9FEF-C8B86E6ADA81}|ExercicioTI20NN\\ExercicioTI20NN.csproj|solutionrelative:exercicioti20nn\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5746427F-D1B4-45BE-9FEF-C8B86E6ADA81}|ExercicioTI20NN\\ExercicioTI20NN.csproj|C:\\Users\\marce\\source\\repos\\ExercicioTi20\\exercicioti20nn\\control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5746427F-D1B4-45BE-9FEF-C8B86E6ADA81}|ExercicioTI20NN\\ExercicioTI20NN.csproj|solutionrelative:exercicioti20nn\\control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5746427F-D1B4-45BE-9FEF-C8B86E6ADA81}|ExercicioTI20NN\\ExercicioTI20NN.csproj|C:\\Users\\marce\\source\\repos\\ExercicioTi20\\exercicioti20nn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5746427F-D1B4-45BE-9FEF-C8B86E6ADA81}|ExercicioTI20NN\\ExercicioTI20NN.csproj|solutionrelative:exercicioti20nn\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\ExercicioTI20NN\\Model.cs",
+              "RelativeDocumentMoniker": "ExercicioTI20NN\\Model.cs",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\ExercicioTI20NN\\Model.cs",
+              "RelativeToolTip": "ExercicioTI20NN\\Model.cs",
+              "ViewState": "AQIAAOUAAAAAAAAAAAAlwFQCAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T22:14:42.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Control.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\ExercicioTI20NN\\Control.cs",
+              "RelativeDocumentMoniker": "ExercicioTI20NN\\Control.cs",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\ExercicioTI20NN\\Control.cs",
+              "RelativeToolTip": "ExercicioTI20NN\\Control.cs",
+              "ViewState": "AQIAAJABAAAAAAAAAAAqwK4BAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T22:14:42.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\ExercicioTI20NN\\Program.cs",
+              "RelativeDocumentMoniker": "ExercicioTI20NN\\Program.cs",
+              "ToolTip": "C:\\Users\\marce\\source\\repos\\ExercicioTi20\\ExercicioTI20NN\\Program.cs",
+              "RelativeToolTip": "ExercicioTI20NN\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T22:14:42.618Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

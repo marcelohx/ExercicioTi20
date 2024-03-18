@@ -22,3 +22,10 @@ C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI2
 C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.exe.config
 C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.exe
 C:\Users\marcelo.hxavier\Source\Repos\marcelohx\ExerciciosTI20NNovo\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.pdb
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.exe.config
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.exe
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\bin\Debug\ExercicioTI20NN.pdb
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.csproj.AssemblyReference.cache
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.csproj.CoreCompileInputs.cache
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.exe
+C:\Users\marce\Source\Repos\ExercicioTi20\ExercicioTI20NN\obj\Debug\ExercicioTI20NN.pdb

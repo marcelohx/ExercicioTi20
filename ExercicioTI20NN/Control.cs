@@ -58,7 +58,17 @@ namespace ExerciciosTI20N
                               "37. Exercício 37\n" +
                               "38. Exercício 38\n" +
                               "39. Exercício 39\n" +
-                              "40. Exercício 40");
+                              "40. Exercício 40\n" +
+                              "41. Exercício 41\n" +
+                              "42. Exercício 42\n" +
+                              "43. Exercício 43\n" +
+                              "44. Exercício 44\n" +
+                              "45. Exercício 45\n" +
+                              "46. Exercício 46\n" +
+                              "47. Exercício 47\n" +
+                              "48. Exercício 48\n" +
+                              "49. Exercício 49\n" +
+                              "50. Exercício 50");
 
         }//fim do menu
 
@@ -322,6 +332,103 @@ namespace ExerciciosTI20N
                         break;
                     case 38:
                         Console.WriteLine(modelo.ExercicioTrintaOito());
+                        break;
+                    case 40:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarenta(num));
+                        break;
+                    case 41:
+                        Console.WriteLine("Informe um número para A: ");
+                        int numA = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para B: ");
+                        int numB = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para C: ");
+                        int numC = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaUm(numA, numB, numC));
+                        break;
+                    case 42:
+                        Console.WriteLine("Informe um número para A: ");
+                        numA = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para B: ");
+                        numB = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaDois(numA, numB));
+                        break;
+                    case 43:
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaTres(num));
+                        break;
+                    case 44:
+                        Console.WriteLine("Informe o valor do salário minámo: ");
+                        double salarioMinimo = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe o valor do salário: ");
+                        double salario = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaQuatro(salarioMinimo, salario));
+                        break;
+                    case 45:
+                        Console.WriteLine("Informe um número para A: ");
+                        numA = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para B: ");
+                        numB = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para C: ");
+                        numC = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaCinco(numA, numB, numC));
+                        break;
+                    case 46:
+                        Console.WriteLine("Informe o nome: ");
+                        string nome = Convert.ToString(Console.ReadLine());
+
+                        Console.WriteLine("Informe o sobrenome: ");
+                        string sobrenome = Convert.ToString(Console.ReadLine());
+
+                        Console.WriteLine("Informe a primeira nota: ");
+                        double nota1 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a segunda nota: ");
+                        double nota2 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a terceira nota: ");
+                        double nota3 = Convert.ToDouble(Console.ReadLine());
+
+                        Console.WriteLine("Informe a quarta nota: ");
+                        double nota4 = Convert.ToDouble(Console.ReadLine());
+
+
+                        Console.WriteLine(modelo.ExercicioQuarentaSeis(nota1, nota2, nota3, nota4, nome, sobrenome));
+                        break;
+                    case 47:
+                        Console.WriteLine("Informe um número para A: ");
+                        numA = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para B: ");
+                        numB = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaSete(numA, numB));
+                        break;
+                    case 49:
+                        Console.WriteLine("Informe um número para A: ");
+                        numA = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para B: ");
+                        numB = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe um número para C: ");
+                        numC = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaNove(numA, numB, numC));
                         break;
                 }//fim do método
             } while (opcao != 0);

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics.SymbolStore;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -593,17 +595,40 @@ namespace ExerciciosTI20N
 
         //Exercício 39: Faça um programa que peça ao usuário uma palavra e imprima
         //cada letra dela em uma linha.
-        public string ExercicioTrintaNove(string palavra)
-        {
-
-        }
 
 
         //Exercício 40:  Faça um programa que peça ao usuário um número e imprima
         //a soma dos números pares até esse número.
+        public int ExercicioQuarenta(int num)
+        {
+            int soma = 0;
+            for(int i = 0; i <= num; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    soma += i;
+                }//fim if
+            }//fim for
+            return soma;
+        }//fim metodo
 
         //Exercício 41: Faça um algoritmo que leia os valores de A, B, C e em
         //seguida imprima na tela a soma entre A e B é mostre se a soma é menor que C.
+        public string ExercicioQuarentaUm(int numA, int numB, int numC)
+        {
+            int soma = 0;
+
+            soma = numA + numB;
+
+            if(numC < soma)
+            {
+                return "A soma de A e B é: " + soma + "\nSendo a soma maior que o valor de C: " + numC;
+            }//fim if
+            else
+            {
+                return "A soma de A e B é: " + soma + "\nSendo a soma menor que o valor de C: " + numC;
+            }//fim else
+        }//fim metodo
 
 
 
@@ -611,47 +636,147 @@ namespace ExerciciosTI20N
         //se os valores de A e B forem iguais, deverá somar os dois valores,
         //senão deverá multiplicar. Ao final de qualquer um dos cálculos deve-se
         //atribuir o resultado a uma variável C e imprimir na tela.
-
+        public string ExercicioQuarentaDois(int numA, int numB)
+        {
+            int numC = 0;
+            if(numA == numB)
+            {
+                numC = numA + numB;
+                return "Os números A e B são iguais o valor da soma entre eles é de: " + numC;
+            }//fim if
+            else
+            {
+                numC = numA * numB;
+                return "Os números A e B são diferentes o valor da multiplicação entre eles é de: " + numC;
+            }//fim else
+            
+        }//fim metodo
 
 
         //Exercício 43: Faça um algoritmo que receba um número inteiro e imprima na
         //tela o seu antecessor e o seu sucessor.
-
-
+        public string ExercicioQuarentaTres(int num)
+        {
+            return "O numero digitado foi: " + num + "\nO seu antecessor é: " + (num - 1) + "\nO seu sucessor é " + (num + 1) + ".";
+        }
 
         //Exercício 44: Faça um algoritmo que leia o valor do salário mínimo e o
         //valor do salário de um usuário, calcule quantos salários mínimos esse 
         //usuário ganha e imprima na tela o resultado.
-
+        public string ExercicioQuarentaQuatro(double salarioMinimo, double salario)
+        {
+            double contagem = 0;
+ 
+            contagem = salario / salarioMinimo;
+            
+            return "O salário correspode aproximadamente " + Math.Round(contagem, 2) + " vezes o salário minímo";
+        }//fim do metodo
 
 
         //Exercício 45:  Faça um algoritmo que leia três valores inteiros diferentes e
         //imprima na tela os valores em ordem decrescente.
-
+        public string ExercicioQuarentaCinco(int numA, int numB, int numC)
+        {
+            if(numA >  numB)
+            {
+                if(numA > numC)
+                {
+                    if (numB > numC)
+                    {
+                        return " " + numA + " " + numB + " " + numC;
+                    }
+                    else
+                    {
+                        return " " + numA + " " + numC + " " + numB;
+                    }
+                }
+                else
+                {
+                    return " " + numC + " " + numA + " " + numB;
+                }
+                
+            }
+            else
+            {
+                if (numB > numC)
+                {
+                    if( numC > numA)
+                    {
+                        return " " + numB + " " + numC + " " + numA;
+                    }
+                    else
+                    {
+                        return " " + numB + " " + numA + " " + numC;
+                    }
+                }
+                else
+                {
+                    return " " + numC + " " + numB + " " + numA;
+                }
+            }
+            
+        }
 
 
         //Exercício 46:Faça um algoritmo que leia quatro notas obtidas por um aluno,
         //calcule a média das nota obtidas, imprima na tela o nome do aluno e 
         //se o aluno foi aprovado ou reprovado.
         //Para o aluno ser considerado aprovado sua média final deve ser maior ou igual a 7.
+        public string ExercicioQuarentaSeis(double nota1, double nota2, double nota3, double nota4, string nome, string sobrenome)
+        {
+            double soma = 0;
+            double media = 0;
+            soma = nota1 + nota2 + nota3 + nota4;
+            media = soma / 4;
 
+            if (media >= 7)
+            {
+                return "Nome: " + nome + " " + sobrenome + "\nO aluno foi aprovado com média: " + media;
+            }
+            else
+            {
+                return "Nome: " + nome + " " + sobrenome + "\nO aluno foi reprovado com média: " + media;
+            }
+        }
 
 
         //Exercício 47: Faça um algoritmo que receba um valor A e B, e troque o valor de A por B e o
         //valor de B por A e imprima na tela os valores.
-
+        public string ExercicioQuarentaSete(int numA, int numB)
+        {
+            return "VALOR DAS LETRAS ANTES DA TROCA: \n" + "A: " + numA + "\nB: " + numB + "\nVALOR DAS LETRAS DEPOIS DA TROCA: \n" + "A: " + numB + "\nB: " + numA;
+        }
 
 
         //Exercício 48: Faça um algoritmo que leia o ano em que uma pessoa nasceu,
         //imprima na tela quantos anos, meses e dias essa pessoa ja viveu. Leve em 
         //consideração o ano com 365 dias e o mês com 30 dias. (Ex: 5 anos, 2 meses e 15 dias de vida)
-
+       
 
 
         //Exercício 49: Faça um algoritmo que leia três valores que representam os três lados
         //de um triângulo e verifique se são válidos, determine se o triângulo é 
         //equilátero, isósceles ou escaleno.
+        public string ExercicioQuarentaNove(int numA, int numB, int numC)
+        {
+            do
+            {
+                if (numA == numB && numA == numC)
+                {
+                    return "É um triângulo é Equilátero.";
+                }
+                else if (numA == numB && numA != numC)
+                {
+                    return "É um triângulo Isósceles. ";
+                }
+                else
+                {
+                    return "É um triângulo Escaleno. ";
+                }
+            } while (numA > 0 && numB > 0 && numC > 0);
 
+
+        }
 
 
         //Exercício 50: Faça um algoritmo que calcule a quantidade de litros de combustível
