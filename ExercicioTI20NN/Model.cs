@@ -380,7 +380,7 @@ namespace ExerciciosTI20N
         {
             int idade = 0;
 
-            idade = (ano * 365) + (mes * 12) + dia;
+            idade = (ano * 365) + (mes * 30) + dia;
 
             return idade;
         }
@@ -397,14 +397,14 @@ namespace ExerciciosTI20N
 
             if(vendas <= 1500)
             {
-                vendasComissao = vendas * 0.03;
+                vendasComissao = (vendas * 0.03) + salarioFixo;
             }
             else if(vendas > 1500) 
             {
-                vendasComissao = vendas * 0.05;
+                vendasComissao = (1500 * 0.03) + ((vendas - 1500) * 0.05) + salarioFixo;
             }
 
-            return salarioFixo + vendasComissao;
+            return vendasComissao;
         }
 
         //Exercício 29: Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS.
@@ -430,7 +430,7 @@ namespace ExerciciosTI20N
         //números lidos com valor inferior a 40 devem ser somados.
         //Escreva o valor final da soma efetuada
 
-        public int ExercicioTrinta()
+        public void ExercicioTrinta()
         {
             int num = 0;
             int soma = 0;
@@ -444,7 +444,7 @@ namespace ExerciciosTI20N
                     soma += num;
                 }
             }
-            return soma;
+            Console.WriteLine("A soma dos numeros inferiores a quarenta é: " + soma);
         }
 
         //Exercício 31: Escreva um algoritmo que permita a leitura das notas de
@@ -595,7 +595,13 @@ namespace ExerciciosTI20N
 
         //Exercício 39: Faça um programa que peça ao usuário uma palavra e imprima
         //cada letra dela em uma linha.
-
+        public void ExercicioTrintaNove(string palavra)
+        {
+            for(int i = 0; i < palavra.Length; i++)
+            {
+                Console.WriteLine(palavra.Substring(i,1));
+            }
+        }
 
         //Exercício 40:  Faça um programa que peça ao usuário um número e imprima
         //a soma dos números pares até esse número.
@@ -751,7 +757,34 @@ namespace ExerciciosTI20N
         //Exercício 48: Faça um algoritmo que leia o ano em que uma pessoa nasceu,
         //imprima na tela quantos anos, meses e dias essa pessoa ja viveu. Leve em 
         //consideração o ano com 365 dias e o mês com 30 dias. (Ex: 5 anos, 2 meses e 15 dias de vida)
-       
+       public string ExercicioQuarentaOito(int anoNas, int mesNas, int diaNas, int anoAtual, int mesAtual, int diaAtual)
+        {
+            int diaFinal = 0;
+            int mesFinal = 0;
+            int anoFinal = 0;
+
+            anoFinal = anoAtual - anoNas;
+
+            if(diaNas < diaAtual)
+            {
+                diaFinal = diaAtual - diaNas;
+            }
+            else
+            {
+                diaFinal = diaNas - diaAtual;
+            }
+
+            if(mesNas < mesAtual)
+            {
+                mesFinal = mesAtual - mesNas ;
+            }
+            else
+            {
+                mesFinal = mesNas - mesAtual;
+            }
+
+            return "Você ja viveu por: \n" + anoFinal + " Ano(s)\n" + mesFinal + " Mes(es)\n" + diaFinal + " Dia(s)." ;
+        }
 
 
         //Exercício 49: Faça um algoritmo que leia três valores que representam os três lados

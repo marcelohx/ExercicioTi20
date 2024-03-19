@@ -267,7 +267,7 @@ namespace ExerciciosTI20N
                         Console.WriteLine("Os numeros negativos são: " + modelo.ExercicioVinteNove());
                         break;
                     case 30:
-                        Console.WriteLine("A soma dos numeros menores que 40 são: " + modelo.ExercicioTrinta());
+                         modelo.ExercicioTrinta();
                         break;
                     case 31:
                         Console.WriteLine("A media da nota das salas: " + modelo.ExercicioTrintaUm());
@@ -332,6 +332,11 @@ namespace ExerciciosTI20N
                         break;
                     case 38:
                         Console.WriteLine(modelo.ExercicioTrintaOito());
+                        break;
+                    case 39:
+                        Console.WriteLine("Indorme uma palavra: ");
+                        string palavra = Console.ReadLine();
+                        modelo.ExercicioTrintaNove(palavra);
                         break;
                     case 40:
                         Console.WriteLine("Informe um número: ");
@@ -417,6 +422,27 @@ namespace ExerciciosTI20N
                         numB = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercicioQuarentaSete(numA, numB));
+                        break;
+                    case 48:
+                        Console.WriteLine("Informe o dia atual: ");
+                        int diaAtual = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o mes atual: ");
+                        int mesAtual = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o ano atual: ");
+                        int anoAtual = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o dia de nascimento: ");
+                        int diaNas = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o mes de nascimento: ");
+                        int mesNas = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine("Informe o ano de nascimento: ");
+                        int anoNas = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioQuarentaOito(anoNas, mesNas, diaNas, anoAtual, mesAtual, diaAtual));
                         break;
                     case 49:
                         Console.WriteLine("Informe um número para A: ");
