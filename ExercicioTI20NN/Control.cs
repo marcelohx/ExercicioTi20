@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -68,7 +69,27 @@ namespace ExerciciosTI20N
                               "47. Exercício 47\n" +
                               "48. Exercício 48\n" +
                               "49. Exercício 49\n" +
-                              "50. Exercício 50");
+                              "50. Exercício 50\n" +
+                              "51. Exercício 51\n" +
+                              "52. Exercício 52\n" +
+                              "53. Exercício 53\n" +
+                              "54. Exercício 54\n" +
+                              "55. Exercício 55\n" +
+                              "56. Exercício 56\n" +
+                              "57. Exercício 57\n" +
+                              "58. Exercício 58\n" +
+                              "59. Exercício 59\n" +
+                              "60. Exercício 60\n" +
+                              "61. Exercício 61\n" +
+                              "62. Exercício 62\n" +
+                              "63. Exercício 63\n" +
+                              "64. Exercício 64\n" +
+                              "65. Exercício 65\n" +
+                              "66. Exercício 66\n" +
+                              "67. Exercício 67\n" +
+                              "68. Exercício 68\n" +
+                              "69. Exercício 69\n" +
+                              "70. Exercício 70");
 
         }//fim do menu
 
@@ -455,6 +476,27 @@ namespace ExerciciosTI20N
                         numC = Convert.ToInt32(Console.ReadLine());
 
                         Console.WriteLine(modelo.ExercicioQuarentaNove(numA, numB, numC));
+                        break;
+                    case 51:
+                        modelo.ExercicioCinquentaUm();
+                        break;
+                    case 52:
+                        Console.WriteLine("A media do vetor é: " + modelo.ExercicioCinquentaDois());
+                        break;
+                    case 53:
+                        modelo.ExercicioCinquentaTres();
+                        break;
+                    case 54:
+                        modelo.ExercicioCinquentaQuatro();
+                        break;
+                    case 55:
+                        modelo.ExercicioCinquentaCinco();
+                        break;
+                    case 56:
+                        Console.WriteLine("A soma dos valores dentro do vetor é de: " + modelo.ExercicioCinquentaSeis());
+                        break;
+                    case 57:
+                        modelo.ExercicioCinquentaSete();
                         break;
                 }//fim do método
             } while (opcao != 0);

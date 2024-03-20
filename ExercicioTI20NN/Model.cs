@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Diagnostics.SymbolStore;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,9 +38,9 @@ namespace ExerciciosTI20N
         {
             string resultado = "";
 
-            for(int i = 0; i < 20; i++)
+            for (int i = 0; i < 20; i++)
             {
-                if((i+1) % 2 == 0)
+                if ((i + 1) % 2 == 0)
                 {
                     resultado += "\n" + (i + 1);
                 }//fim do if
@@ -53,7 +54,7 @@ namespace ExerciciosTI20N
         {
             int soma = 0;
 
-            for(int i=1; i <= 100; i++)
+            for (int i = 1; i <= 100; i++)
             {
                 soma += i;
             }//fim do for
@@ -65,9 +66,9 @@ namespace ExerciciosTI20N
         public string ExercicioQuatro()
         {
             string multiplo = "";
-            for(int i=1; i <= 50; i++)
+            for (int i = 1; i <= 50; i++)
             {
-                if(i % 5 == 0)
+                if (i % 5 == 0)
                 {
                     multiplo += "\n" + i;
                 }
@@ -75,11 +76,11 @@ namespace ExerciciosTI20N
 
             return multiplo;
         }//fim do método
-        
+
         //Exercício 5: Faça um programa que peça ao usuário um número e imprima se é par ou ímpar.
         public string ExercicioCinco(int num)
         {
-            if(num % 2 == 0)
+            if (num % 2 == 0)
             {
                 return num + " é par";
             }
@@ -92,10 +93,11 @@ namespace ExerciciosTI20N
         //Exercício 6: Faça um programa que peça ao usuário um número e imprima se é positivo, negativo ou zero.
         public string ExercicioSeis(int num)
         {
-            if(num < 0)
+            if (num < 0)
             {
                 return num + " é Negativo!";
-            }else if(num > 0)
+            }
+            else if (num > 0)
             {
                 return num + " é Positivo!";
             }
@@ -111,7 +113,7 @@ namespace ExerciciosTI20N
         {
             string resultado = "";
 
-            for(int i=0; i <= 10; i++)
+            for (int i = 0; i <= 10; i++)
             {
                 resultado += num + " * " + i + " = " + (num * i) + "\n";
             }//fim do for
@@ -125,7 +127,7 @@ namespace ExerciciosTI20N
         {
             string resultado = "";
 
-            for(int i=0; i <= num; i++)
+            for (int i = 0; i <= num; i++)
             {
                 resultado += "\n" + i;
             }
@@ -152,12 +154,12 @@ namespace ExerciciosTI20N
         public string ExercicioDez()
         {
             string primos = "2 3 5";
-            for(int i=2; i <= 20; i++)
+            for (int i = 2; i <= 20; i++)
             {
                 if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0)
                 {
                     primos += " " + i;
-                }                
+                }
             }//fim do for
             return primos;
         }//fim do método
@@ -169,7 +171,8 @@ namespace ExerciciosTI20N
             if (num % 2 != 0 && num % 3 != 0 && num % 5 != 0)
             {
                 return "Primo!";
-            }else if(num == 2 || num == 3 || num == 5)
+            }
+            else if (num == 2 || num == 3 || num == 5)
             {
                 return "Primo!";
             }
@@ -183,9 +186,9 @@ namespace ExerciciosTI20N
         public int ExercicioDoze(int num)
         {
             int fatorial = 1;
-            for(int i = num; i >= 1; i--)
+            for (int i = num; i >= 1; i--)
             {
-                fatorial *= i;  
+                fatorial *= i;
             }
             return fatorial;
         }//fim do método
@@ -198,10 +201,10 @@ namespace ExerciciosTI20N
             int fib1 = 0;
             int fib2 = 1;
             int fib3 = 0;
-            for(int i = 1; i <= 8; i++)
+            for (int i = 1; i <= 8; i++)
             {
                 fib3 = fib1 + fib2;
-                resultado += " " + fib3; 
+                resultado += " " + fib3;
                 fib1 = fib2;
                 fib2 = fib3;
             }//fim do for
@@ -217,7 +220,7 @@ namespace ExerciciosTI20N
             int fib1 = 0;
             int fib2 = 1;
             int fib3 = 0;
-            for (int i = 1; i <= num-2; i++)
+            for (int i = 1; i <= num - 2; i++)
             {
                 fib3 = fib1 + fib2;
                 resultado += " " + fib3;
@@ -235,22 +238,22 @@ namespace ExerciciosTI20N
             string resultado = "" + num; //Convertendo o número para texto
             int tamanho = resultado.Length;//Retorna o tamanho do texto
             int soma = 0;
-            for(int i=0; i < tamanho; i++)
+            for (int i = 0; i < tamanho; i++)
             {
                 soma += Convert.ToInt32(resultado.Substring(i, 1));//coletando 1 caracter por vez
             }
             return soma;
         }//fim do método
-        
+
         //Exercício 16: Faça um programa que peça ao usuário um número
         //e imprima os números pares e ímpares de 1 até esse número.
         public string ExercicioDezesseis(int num)
         {
             string par = "";
             string impar = "";
-            for(int i=1; i <= num; i++)
+            for (int i = 1; i <= num; i++)
             {
-                if(i % 2 == 0)
+                if (i % 2 == 0)
                 {
                     par += " " + i;
                 }
@@ -273,7 +276,7 @@ namespace ExerciciosTI20N
         }
 
         //Exercicio 18: Faça um programa que peça ao usuario dois numeros e imprima a media deles.
-        public double ExercicioDezoito( double num1, double num2)
+        public double ExercicioDezoito(double num1, double num2)
         {
             double media = 0;
 
@@ -302,7 +305,7 @@ namespace ExerciciosTI20N
 
             return area;
         }
-        
+
         //Exercicio 21: Faça um programa que peça um numero e imprima seu quadrado.
         public int ExercicioVinteUm(int num)
         {
@@ -316,7 +319,7 @@ namespace ExerciciosTI20N
         //Exercicio 22: Faça um programa que peça dois numeros e imprima o maior deles
         public int ExercicioVinteDois(int num3, int num4)
         {
-            if(num3 > num4)
+            if (num3 > num4)
             {
                 return num3;
             }
@@ -327,10 +330,10 @@ namespace ExerciciosTI20N
         }
 
         //Exercicio 23: Faça um programa que peça dois numeros e imprima "São iguais" se forem iguais e "São diferentes" se forem diferentes
-        public string ExercicioVinteTres(int num3,int num4)
+        public string ExercicioVinteTres(int num3, int num4)
         {
 
-            if(num3 != num4)
+            if (num3 != num4)
             {
                 return "São diferentes";
             }
@@ -343,7 +346,7 @@ namespace ExerciciosTI20N
         //Exericio 24: Faça um porgrama que peça a idade do usario e imprima se ele é maior ou menor de idade
         public string ExercicioVinteQuatro(int num)
         {
-            if(num < 18)
+            if (num < 18)
             {
                 return "Menor de idade";
             }
@@ -395,11 +398,11 @@ namespace ExerciciosTI20N
         {
             double vendasComissao = 0;
 
-            if(vendas <= 1500)
+            if (vendas <= 1500)
             {
                 vendasComissao = (vendas * 0.03) + salarioFixo;
             }
-            else if(vendas > 1500) 
+            else if (vendas > 1500)
             {
                 vendasComissao = (1500 * 0.03) + ((vendas - 1500) * 0.05) + salarioFixo;
             }
@@ -412,12 +415,12 @@ namespace ExerciciosTI20N
         {
             int num = 0;
             int cont = 0;
-            for(int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Informe um número: ");
                 num = Convert.ToInt32(Console.ReadLine());
 
-                if(num < 0)
+                if (num < 0)
                 {
                     cont++;
                 }
@@ -434,12 +437,12 @@ namespace ExerciciosTI20N
         {
             int num = 0;
             int soma = 0;
-            for(int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Informe um numero: ");
                 num = Convert.ToInt32(Console.ReadLine());
 
-                if(num < 40)
+                if (num < 40)
                 {
                     soma += num;
                 }
@@ -455,7 +458,7 @@ namespace ExerciciosTI20N
             double media = 0;
             double nota = 0;
             double soma = 0;
-            for(int i = 0; i <= 20; i++)
+            for (int i = 0; i <= 20; i++)
             {
                 Console.WriteLine("Informe um numero: ");
                 nota = Convert.ToInt32(Console.ReadLine());
@@ -487,7 +490,7 @@ namespace ExerciciosTI20N
             double litrosUsados = 0;
 
             distancia = tempo * velociMedia;
-            
+
             litrosUsados = distancia / 12;
 
             return "A velocidade média é de: " + velociMedia + "\n O tempo gasto na viagem é de: " + tempo + "\n A distância percorrida é de: " + distancia + "\n A quantidade de litros utilizada é de: " + litrosUsados;
@@ -563,12 +566,12 @@ namespace ExerciciosTI20N
                 if (i % 3 == 0)
                 {
                     multiplo += "\n" + "Fiz";
-                }              
-                else if(i % 5 == 0)
+                }
+                else if (i % 5 == 0)
                 {
                     multiplo += "\n" + "Buzz";
                 }
-                else if(i % 3 == 0 && i % 5 == 0)
+                else if (i % 3 == 0 && i % 5 == 0)
                 {
                     multiplo += "\n" + "FizBuzz";
                 }
@@ -597,9 +600,9 @@ namespace ExerciciosTI20N
         //cada letra dela em uma linha.
         public void ExercicioTrintaNove(string palavra)
         {
-            for(int i = 0; i < palavra.Length; i++)
+            for (int i = 0; i < palavra.Length; i++)
             {
-                Console.WriteLine(palavra.Substring(i,1));
+                Console.WriteLine(palavra.Substring(i, 1));
             }
         }
 
@@ -608,9 +611,9 @@ namespace ExerciciosTI20N
         public int ExercicioQuarenta(int num)
         {
             int soma = 0;
-            for(int i = 0; i <= num; i++)
+            for (int i = 0; i <= num; i++)
             {
-                if(i % 2 == 0)
+                if (i % 2 == 0)
                 {
                     soma += i;
                 }//fim if
@@ -626,7 +629,7 @@ namespace ExerciciosTI20N
 
             soma = numA + numB;
 
-            if(numC < soma)
+            if (numC < soma)
             {
                 return "A soma de A e B é: " + soma + "\nSendo a soma maior que o valor de C: " + numC;
             }//fim if
@@ -645,7 +648,7 @@ namespace ExerciciosTI20N
         public string ExercicioQuarentaDois(int numA, int numB)
         {
             int numC = 0;
-            if(numA == numB)
+            if (numA == numB)
             {
                 numC = numA + numB;
                 return "Os números A e B são iguais o valor da soma entre eles é de: " + numC;
@@ -655,7 +658,7 @@ namespace ExerciciosTI20N
                 numC = numA * numB;
                 return "Os números A e B são diferentes o valor da multiplicação entre eles é de: " + numC;
             }//fim else
-            
+
         }//fim metodo
 
 
@@ -672,9 +675,9 @@ namespace ExerciciosTI20N
         public string ExercicioQuarentaQuatro(double salarioMinimo, double salario)
         {
             double contagem = 0;
- 
+
             contagem = salario / salarioMinimo;
-            
+
             return "O salário correspode aproximadamente " + Math.Round(contagem, 2) + " vezes o salário minímo";
         }//fim do metodo
 
@@ -683,9 +686,9 @@ namespace ExerciciosTI20N
         //imprima na tela os valores em ordem decrescente.
         public string ExercicioQuarentaCinco(int numA, int numB, int numC)
         {
-            if(numA >  numB)
+            if (numA > numB)
             {
-                if(numA > numC)
+                if (numA > numC)
                 {
                     if (numB > numC)
                     {
@@ -700,13 +703,13 @@ namespace ExerciciosTI20N
                 {
                     return " " + numC + " " + numA + " " + numB;
                 }
-                
+
             }
             else
             {
                 if (numB > numC)
                 {
-                    if( numC > numA)
+                    if (numC > numA)
                     {
                         return " " + numB + " " + numC + " " + numA;
                     }
@@ -720,7 +723,7 @@ namespace ExerciciosTI20N
                     return " " + numC + " " + numB + " " + numA;
                 }
             }
-            
+
         }
 
 
@@ -757,7 +760,7 @@ namespace ExerciciosTI20N
         //Exercício 48: Faça um algoritmo que leia o ano em que uma pessoa nasceu,
         //imprima na tela quantos anos, meses e dias essa pessoa ja viveu. Leve em 
         //consideração o ano com 365 dias e o mês com 30 dias. (Ex: 5 anos, 2 meses e 15 dias de vida)
-       public string ExercicioQuarentaOito(int anoNas, int mesNas, int diaNas, int anoAtual, int mesAtual, int diaAtual)
+        public string ExercicioQuarentaOito(int anoNas, int mesNas, int diaNas, int anoAtual, int mesAtual, int diaAtual)
         {
             int diaFinal = 0;
             int mesFinal = 0;
@@ -765,7 +768,7 @@ namespace ExerciciosTI20N
 
             anoFinal = anoAtual - anoNas;
 
-            if(diaNas < diaAtual)
+            if (diaNas < diaAtual)
             {
                 diaFinal = diaAtual - diaNas;
             }
@@ -774,16 +777,15 @@ namespace ExerciciosTI20N
                 diaFinal = diaNas - diaAtual;
             }
 
-            if(mesNas < mesAtual)
+            if (mesNas < mesAtual)
             {
-                mesFinal = mesAtual - mesNas ;
+                mesFinal = mesAtual - mesNas;
             }
             else
             {
                 mesFinal = mesNas - mesAtual;
             }
-
-            return "Você ja viveu por: \n" + anoFinal + " Ano(s)\n" + mesFinal + " Mes(es)\n" + diaFinal + " Dia(s)." ;
+            return "Você ja viveu por: \n" + anoFinal + " Ano(s)\n" + mesFinal + " Mes(es)\n" + diaFinal + " Dia(s).";
         }
 
 
@@ -807,15 +809,253 @@ namespace ExerciciosTI20N
                     return "É um triângulo Escaleno. ";
                 }
             } while (numA > 0 && numB > 0 && numC > 0);
-
-
         }
 
 
-        //Exercício 50: Faça um algoritmo que calcule a quantidade de litros de combustível
-        //gastos em uma viagem, sabendo que o carro faz 12km com um litro.
-        //Deve-se fornecer ao usuário o tempo que será gasto na viagem a sua velocidade média,
-        //distância percorrida e a quantidade de litros utilizados para fazer a viagem.
-        // Fórmula: distância = tempo x velocidade.  litros usados = distância / 12.
-    }//fim da classe
-}//fim do projeto
+        //Exercício 51: Faça um programa que crie um vetor de números inteiros e
+        //imprima todos os elementos desse vetor.
+        public void ExercicioCinquentaUm()
+        {
+            int[] vet = new int[4];
+            //Preenchendo o vetor
+            for(int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i+1) + "º Numero: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Mostrar o vetor
+            for(int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i+1) + "ª Posição: " + vet[i]);
+            }
+        }//fim do metodo
+
+
+        //Exercício 52: Faça um programa que crie um vetor de números inteiros e
+        //calcule a média dos valores presentes no vetor.
+        public int ExercicioCinquentaDois()
+        {
+            int[] vet = new int[4];
+            int soma = 0;
+            int i = 0;
+            //Preenchendo o vetor
+            for(i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + "º Numero: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i];//somando
+            }
+            //Calcular a media
+            return soma / i;
+        }
+
+
+        //Exercício 53:  Faça um programa que crie um vetor de números inteiros e
+        //imprima apenas os valores pares desse vetor.
+        public void ExercicioCinquentaTres()
+        {
+            int[] vet = new int[4];
+            //Preencher o vetor
+            for(int i = 0; i < 4; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Mostrar os numeros pares 
+            for(int i = 0; i < 4; i++)
+            {
+                if (vet[i] % 2 == 0)
+                {
+                    Console.WriteLine("Os números pares do vetor são: " + (i + 1) + "ª Posição: " + vet[i]);
+                }
+            }
+        }
+
+
+        //Exercício 54: Faça um programa que crie um vetor de números inteiros e
+        //imprima o maior e o menor valor presente no vetor.
+        public void ExercicioCinquentaQuatro()
+        {
+            int[] vet = new int[5];
+            //Preencher o valor
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //instaciar as variaveis menor e maior
+            int maior = vet[0];
+            int menor = vet[0];
+            //Mostrar o menor e maior valor
+            for(int i = 0; i < 5; i++)
+            {
+                if (vet[i] < menor )
+                {
+                    menor = vet[i];
+                }
+
+                if (vet[i] > maior) 
+                {
+                    maior = vet[i];
+
+                }
+            }
+            Console.WriteLine(menor);
+            Console.WriteLine(maior);
+        }
+
+
+
+        //Exercício 55: Faça um programa que crie um vetor de números inteiros e
+        //imprima os elementos na ordem inversa.
+        public void ExercicioCinquentaCinco()
+        {
+            int[] vet = new int[5];
+            //Preencher o valor
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int aux = 0;
+            int j = 4;
+            //Inverter os valores do vetor
+            for (int i = 0; i < 2; i++)//O i é menor que dois para nao inverter e desinverter
+            {
+                aux = vet[j];
+                vet[j] = vet[i];
+                vet[i] = aux;
+                j = j - 1;
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
+            }
+        }
+
+
+        //Exercício 56: Faça um programa que crie um vetor de números inteiros e
+        //calcule a soma de todos os valores presentes no vetor.
+        public int ExercicioCinquentaSeis()
+        {
+            int[] vet = new int[5];
+            int soma = 0;
+            //preencher o valor
+            for(int i = 0; i < 5 ; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+                soma += vet[i];
+            }
+            return soma;
+        }
+
+
+
+        //Exercício 57: Faça um programa que crie dois vetores de números inteiros com o mesmo tamanho e
+        //realize a soma elemento por elemento desses vetores, armazenando o resultado em um terceiro vetor.
+        public void ExercicioCinquentaSete()
+        {
+            int[] vet1 = new int[5];
+            int[] vet2 = new int[5];
+            int[] vet3 = new int[5];
+            //Preencher os vetores 1 e 2
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número do 1º vetor: ");
+                vet1[i] = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine((i + 1) + "º Número do 2º vetor: ");
+                vet2[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for(int i = 0; i < 5; i++)
+            {
+                vet3[i] = vet1[i] + vet2[i];
+                Console.WriteLine((i + 1) + "ª Posição: " + vet3[i]);
+            }
+        }
+
+
+        //Exercício 58: Faça um programa que crie um vetor de números inteiros e
+        //verifique se ele está em ordem crescente.
+        public string ExercicioCinquentaOito()
+        {
+            int[] vet = new int[5];
+
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int j = 1;
+            for (int i = 0; i < 4; i++)
+            {
+                if (vet[i] > vet[j])
+                {
+                    j = j + 1;
+                }
+                return "Não esta na ordem crescente";
+            }
+        }
+
+
+        //Exercício 59: Faça um programa que crie um vetor de números inteiros e remova todos os
+        //elementos repetidos desse vetor, deixando apenas uma ocorrência de cada valor.
+
+
+
+        //Exercício 60: Faça um programa que crie um vetor de strings e
+        //imprima todos os elementos desse vetor em ordem alfabética.
+
+
+
+        //Exercício 61: Faça um programa que crie um vetor de números inteiros e
+        //verifique quantas vezes um determinado valor aparece no vetor.
+
+
+
+        //Exercício 62: Faça um programa que crie um vetor de números inteiros e
+        //verifique se ele está em ordem decrescente.
+
+
+
+        //Exercício 63: Faça um programa que crie um vetor de números inteiros e
+        //encontre o segundo maior valor presente no vetor.
+
+
+
+        //Exercício 64: Faça um programa que crie um vetor de números inteiros e
+        //inverta a ordem dos elementos desse vetor.
+
+
+
+        //Exercício 65: Faça um programa que crie um vetor de números inteiros e calcule a média dos valores
+        //presentes apenas nas posições pares do vetor.
+
+
+
+        //Exercício 66: Faça um programa que crie um vetor de números inteiros e verifique se ele é simétrico
+        //(se os elementos nas extremidades são iguais, os próximos também devem ser, e assim por diante).
+
+
+
+        //Exercício 67: Faça um programa que crie um vetor de números inteiros e verifique se ele
+        //é um vetor palíndromo (se a sequência de números é a mesma lida da esquerda
+        //para a direita e da direita para a esquerda).
+
+
+
+        //Exercício 68: Faça um programa que crie dois vetores de números inteiros e verifique se eles são iguais
+        //(se possuem os mesmos elementos na mesma ordem).
+
+
+
+        //Exercício 69:Faça um programa que crie um vetor de números inteiros e, em seguida,
+        //substitua todos os valores negativos por zero.
+
+
+
+        //Exercício 70: Faça um programa que crie um vetor de números inteiros e remova todas as ocorrências
+        //de um determinado valor no vetor. 
+    }//fim do projeto
+}
