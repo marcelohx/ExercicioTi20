@@ -498,6 +498,18 @@ namespace ExerciciosTI20N
                     case 57:
                         modelo.ExercicioCinquentaSete();
                         break;
+                    case 58:
+                        Console.WriteLine(modelo.ExercicioCinquentaOito());
+                        break;
+                    case 59:
+                        modelo.ExercicioCinquentaNove();
+                        break;
+                    case 60:
+                        modelo.ExercicioSessenta();
+                        break;
+                    case 61:
+                        modelo.ExercicioSessentaUm();
+                        break;
                 }//fim do método
             } while (opcao != 0);
         }//fim do operacao

@@ -981,81 +981,169 @@ namespace ExerciciosTI20N
         public string ExercicioCinquentaOito()
         {
             int[] vet = new int[5];
-
+            Boolean crescente = false;
             for(int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "º Número: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
-            }
+            }//fim for preencher
             int j = 1;
             for (int i = 0; i < 4; i++)
             {
-                if (vet[i] > vet[j])
+                if (vet[i] < vet[j])
                 {
                     j = j + 1;
-                }
-                return "Não esta na ordem crescente";
-            }
-        }
+                    crescente = true;
+                }//fim if
+                else
+                {
+                    crescente = false;
+                }//fim else
+            }//fim for
+            if(crescente == true)
+            {
+                return "O vetor esta em ordem crescente! ";
+            }//fim if
+            else
+            {
+                return "O vetor não esta em ordem crescente! ";
+            }//Fim else
+            
+        }//Fim do metodo
 
 
         //Exercício 59: Faça um programa que crie um vetor de números inteiros e remova todos os
         //elementos repetidos desse vetor, deixando apenas uma ocorrência de cada valor.
-
+        public void ExercicioCinquentaNove()
+        {
+            int[] vet = new int[5];
+           
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Numero: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Removendo os elementos repetidos
+            for (int i = 0; i < 5; i++) //poderia ser tambem "for (int i = 0; i < vet.Length; i++)"
+            {
+                for(int j = i +1; j < 5; j++)
+                {
+                    if (vet[i] == vet[j])
+                    {
+                        vet[j] = 0;
+                    }
+                }
+            }
+            
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
+            }
+        }
 
 
         //Exercício 60: Faça um programa que crie um vetor de strings e
         //imprima todos os elementos desse vetor em ordem alfabética.
-
+        public void ExercicioSessenta()
+        {
+            string[] vet = new string[5];
+            
+            for (int i = 0; i < 5;i++)
+            {
+                Console.WriteLine((i + 1) + " Letra: ");
+                vet[i] = Convert.ToString(Console.ReadLine());
+            }
+            for (int i = 0; i < vet.Length - 1; i++)
+            {
+                for(int j = 0; j < vet.Length - 1 - i; j++)
+                {
+                    if (string.Compare(vet[j], vet[j + 1]) > 0)
+                    {
+                        string temp = vet[j];
+                        vet[j] = vet[j + 1];
+                        vet[j + 1] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
+            }
+        }
 
 
         //Exercício 61: Faça um programa que crie um vetor de números inteiros e
         //verifique quantas vezes um determinado valor aparece no vetor.
+        public void ExercicioSessentaUm()
+        {
+            int[] vet = new int[5];
+
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Numero: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int cont = 0;
+            //Removendo os elementos repetidos
+            for (int i = 0; i < 5; i++) //poderia ser tambem "for (int i = 0; i < vet.Length; i++)"
+            {
+                for (int j = i + 1; j < 5; j++)
+                {
+                    if (vet[i] == vet[j])
+                    {
+                         
+                    }
+                }
+            }
+               Console.WriteLine("O numero de vezes que os numeros do vetor se repetem é: " + cont);
+            
+
+        }
+    }
+
+
+    //Exercício 62: Faça um programa que crie um vetor de números inteiros e
+    //verifique se ele está em ordem decrescente.
 
 
 
-        //Exercício 62: Faça um programa que crie um vetor de números inteiros e
-        //verifique se ele está em ordem decrescente.
+    //Exercício 63: Faça um programa que crie um vetor de números inteiros e
+    //encontre o segundo maior valor presente no vetor.
 
 
 
-        //Exercício 63: Faça um programa que crie um vetor de números inteiros e
-        //encontre o segundo maior valor presente no vetor.
+    //Exercício 64: Faça um programa que crie um vetor de números inteiros e
+    //inverta a ordem dos elementos desse vetor.
 
 
 
-        //Exercício 64: Faça um programa que crie um vetor de números inteiros e
-        //inverta a ordem dos elementos desse vetor.
+    //Exercício 65: Faça um programa que crie um vetor de números inteiros e calcule a média dos valores
+    //presentes apenas nas posições pares do vetor.
 
 
 
-        //Exercício 65: Faça um programa que crie um vetor de números inteiros e calcule a média dos valores
-        //presentes apenas nas posições pares do vetor.
+    //Exercício 66: Faça um programa que crie um vetor de números inteiros e verifique se ele é simétrico
+    //(se os elementos nas extremidades são iguais, os próximos também devem ser, e assim por diante).
 
 
 
-        //Exercício 66: Faça um programa que crie um vetor de números inteiros e verifique se ele é simétrico
-        //(se os elementos nas extremidades são iguais, os próximos também devem ser, e assim por diante).
+    //Exercício 67: Faça um programa que crie um vetor de números inteiros e verifique se ele
+    //é um vetor palíndromo (se a sequência de números é a mesma lida da esquerda
+    //para a direita e da direita para a esquerda).
 
 
 
-        //Exercício 67: Faça um programa que crie um vetor de números inteiros e verifique se ele
-        //é um vetor palíndromo (se a sequência de números é a mesma lida da esquerda
-        //para a direita e da direita para a esquerda).
+    //Exercício 68: Faça um programa que crie dois vetores de números inteiros e verifique se eles são iguais
+    //(se possuem os mesmos elementos na mesma ordem).
 
 
 
-        //Exercício 68: Faça um programa que crie dois vetores de números inteiros e verifique se eles são iguais
-        //(se possuem os mesmos elementos na mesma ordem).
+    //Exercício 69:Faça um programa que crie um vetor de números inteiros e, em seguida,
+    //substitua todos os valores negativos por zero.
 
 
 
-        //Exercício 69:Faça um programa que crie um vetor de números inteiros e, em seguida,
-        //substitua todos os valores negativos por zero.
+    //Exercício 70: Faça um programa que crie um vetor de números inteiros e remova todas as ocorrências
+    //de um determinado valor no vetor. 
 
-
-
-        //Exercício 70: Faça um programa que crie um vetor de números inteiros e remova todas as ocorrências
-        //de um determinado valor no vetor. 
-    }//fim do projeto
-}
+}//fim do projeto
