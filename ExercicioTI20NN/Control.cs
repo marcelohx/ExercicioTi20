@@ -69,7 +69,7 @@ namespace ExerciciosTI20N
                               "47. Exercício 47\n" +
                               "48. Exercício 48\n" +
                               "49. Exercício 49\n" +
-                              "50. Exercício 50\n" +
+                              "50. Exercício 50 *NÃO EXISTE*\n" +
                               "51. Exercício 51\n" +
                               "52. Exercício 52\n" +
                               "53. Exercício 53\n" +
@@ -508,7 +508,40 @@ namespace ExerciciosTI20N
                         modelo.ExercicioSessenta();
                         break;
                     case 61:
-                        modelo.ExercicioSessentaUm();
+                        Console.WriteLine("Informe um numero: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine(modelo.ExercicioSessentaUm(num));
+                        break;
+                    case 62:
+                        Console.WriteLine(modelo.ExercicioSessentaDois());
+                        break;
+                    case 63:
+                        Console.WriteLine(modelo.ExercicioSessentaTres());
+                        break;
+                    case 64:
+                        modelo.ExercicioSessentaQuatro();
+                        break;
+                    case 65:
+                        modelo.ExercicioSessentaCinco();
+                        break;
+                    case 66:
+                        modelo.ExercicioSessentaSeis();
+                        break;
+                    case 67:
+                        modelo.ExercicioSessentaSete();
+                        break;
+                    case 68:
+                        modelo.ExercicioSessentaOito();
+                        break;
+                    case 69:
+                        modelo.ExercicioSessentaNove();
+                        break;
+                    case 70:
+                        Console.WriteLine("Informe um numero: ");
+                        num = Convert.ToInt32(Console.ReadLine());
+
+                        modelo.ExercicioSetenta(num);
                         break;
                 }//fim do método
             } while (opcao != 0);

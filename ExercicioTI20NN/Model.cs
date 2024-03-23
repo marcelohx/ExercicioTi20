@@ -818,15 +818,15 @@ namespace ExerciciosTI20N
         {
             int[] vet = new int[4];
             //Preenchendo o vetor
-            for(int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine((i+1) + "º Numero: ");
+                Console.WriteLine((i + 1) + "º Numero: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
             }
             //Mostrar o vetor
-            for(int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine((i+1) + "ª Posição: " + vet[i]);
+                Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
             }
         }//fim do metodo
 
@@ -839,7 +839,7 @@ namespace ExerciciosTI20N
             int soma = 0;
             int i = 0;
             //Preenchendo o vetor
-            for(i = 0; i < 4; i++)
+            for (i = 0; i < 4; i++)
             {
                 Console.WriteLine((i + 1) + "º Numero: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
@@ -856,13 +856,13 @@ namespace ExerciciosTI20N
         {
             int[] vet = new int[4];
             //Preencher o vetor
-            for(int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine((i + 1) + "º Número: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
             }
             //Mostrar os numeros pares 
-            for(int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
             {
                 if (vet[i] % 2 == 0)
                 {
@@ -878,7 +878,7 @@ namespace ExerciciosTI20N
         {
             int[] vet = new int[5];
             //Preencher o valor
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "º Número: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
@@ -887,14 +887,14 @@ namespace ExerciciosTI20N
             int maior = vet[0];
             int menor = vet[0];
             //Mostrar o menor e maior valor
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
-                if (vet[i] < menor )
+                if (vet[i] < menor)
                 {
                     menor = vet[i];
                 }
 
-                if (vet[i] > maior) 
+                if (vet[i] > maior)
                 {
                     maior = vet[i];
 
@@ -941,7 +941,7 @@ namespace ExerciciosTI20N
             int[] vet = new int[5];
             int soma = 0;
             //preencher o valor
-            for(int i = 0; i < 5 ; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "º Número: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
@@ -960,7 +960,7 @@ namespace ExerciciosTI20N
             int[] vet2 = new int[5];
             int[] vet3 = new int[5];
             //Preencher os vetores 1 e 2
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "º Número do 1º vetor: ");
                 vet1[i] = Convert.ToInt32(Console.ReadLine());
@@ -968,7 +968,7 @@ namespace ExerciciosTI20N
                 Console.WriteLine((i + 1) + "º Número do 2º vetor: ");
                 vet2[i] = Convert.ToInt32(Console.ReadLine());
             }
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 vet3[i] = vet1[i] + vet2[i];
                 Console.WriteLine((i + 1) + "ª Posição: " + vet3[i]);
@@ -982,7 +982,7 @@ namespace ExerciciosTI20N
         {
             int[] vet = new int[5];
             Boolean crescente = false;
-            for(int i = 0; i < 5; i++)
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "º Número: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
@@ -1000,7 +1000,7 @@ namespace ExerciciosTI20N
                     crescente = false;
                 }//fim else
             }//fim for
-            if(crescente == true)
+            if (crescente == true)
             {
                 return "O vetor esta em ordem crescente! ";
             }//fim if
@@ -1008,7 +1008,7 @@ namespace ExerciciosTI20N
             {
                 return "O vetor não esta em ordem crescente! ";
             }//Fim else
-            
+
         }//Fim do metodo
 
 
@@ -1017,8 +1017,8 @@ namespace ExerciciosTI20N
         public void ExercicioCinquentaNove()
         {
             int[] vet = new int[5];
-           
-            for(int i = 0; i < 5; i++)
+
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "º Numero: ");
                 vet[i] = Convert.ToInt32(Console.ReadLine());
@@ -1026,7 +1026,7 @@ namespace ExerciciosTI20N
             //Removendo os elementos repetidos
             for (int i = 0; i < 5; i++) //poderia ser tambem "for (int i = 0; i < vet.Length; i++)"
             {
-                for(int j = i +1; j < 5; j++)
+                for (int j = i + 1; j < 5; j++)
                 {
                     if (vet[i] == vet[j])
                     {
@@ -1034,7 +1034,7 @@ namespace ExerciciosTI20N
                     }
                 }
             }
-            
+
             for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
@@ -1047,15 +1047,15 @@ namespace ExerciciosTI20N
         public void ExercicioSessenta()
         {
             string[] vet = new string[5];
-            
-            for (int i = 0; i < 5;i++)
+
+            for (int i = 0; i < 5; i++)
             {
                 Console.WriteLine((i + 1) + " Letra: ");
                 vet[i] = Convert.ToString(Console.ReadLine());
             }
             for (int i = 0; i < vet.Length - 1; i++)
             {
-                for(int j = 0; j < vet.Length - 1 - i; j++)
+                for (int j = 0; j < vet.Length - 1 - i; j++)
                 {
                     if (string.Compare(vet[j], vet[j + 1]) > 0)
                     {
@@ -1074,9 +1074,11 @@ namespace ExerciciosTI20N
 
         //Exercício 61: Faça um programa que crie um vetor de números inteiros e
         //verifique quantas vezes um determinado valor aparece no vetor.
-        public void ExercicioSessentaUm()
+        public string ExercicioSessentaUm(int num)
         {
             int[] vet = new int[5];
+            num = 0;
+
 
             for (int i = 0; i < 5; i++)
             {
@@ -1087,63 +1089,305 @@ namespace ExerciciosTI20N
             //Removendo os elementos repetidos
             for (int i = 0; i < 5; i++) //poderia ser tambem "for (int i = 0; i < vet.Length; i++)"
             {
-                for (int j = i + 1; j < 5; j++)
+                if (vet[i] == num)
+                {
+                    cont++;
+                }
+            }
+            return "O numero de vezes que o numero" + num + "aparece no vetor é: " + cont;
+        }
+
+
+
+        //Exercício 62: Faça um programa que crie um vetor de números inteiros e
+        //verifique se ele está em ordem decrescente.
+        public string ExercicioSessentaDois()
+        {
+            int[] vet = new int[5];
+            Boolean decrescente = false;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }//fim for preencher
+            int j = 1;
+            for (int i = 0; i < 4; i++)
+            {
+                if (vet[i] > vet[j])
+                {
+                    j = j + 1;
+                    decrescente = true;
+                }//fim if
+                else
+                {
+                    decrescente = false;
+                }//fim else
+            }//fim for
+            if (decrescente == true)
+            {
+                return "O vetor esta em ordem decrescente! ";
+            }//fim if
+            else
+            {
+                return "O vetor não esta em ordem decrescente! ";
+            }//Fim else
+
+        }//Fim do metodo
+
+        //Exercício 63: Faça um programa que crie um vetor de números inteiros e
+        //encontre o segundo maior valor presente no vetor.
+        public string ExercicioSessentaTres()
+        {
+            int[] vet = new int[5];
+            int i = 0;
+            int pos = 0;
+            //preenchendo o vetor
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int maior = vet[0];
+            int maior2 = vet[0];
+            for (i = 0; i < 5; i++)
+            {
+                if (vet[i] > maior)
+                {
+                    maior = vet[i];
+                    pos = i;
+                }
+            }
+
+            vet[pos] = -1;
+
+            for (i = 0; i < 5; i++)
+            {
+                if (vet[i] > maior2)
+                {
+                    maior2 = vet[i];
+                }
+            }
+            return "O maior valor é: " + maior2;
+        }
+
+        //Exercício 64: Faça um programa que crie um vetor de números inteiros e
+        //inverta a ordem dos elementos desse vetor.
+        public void ExercicioSessentaQuatro()
+        {
+            int[] vet = new int[5];
+            //Preencher o valor
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int aux = 0;
+            int j = 4;
+            //Inverter os valores do vetor
+            for (int i = 0; i < 2; i++)//O i é menor que dois para nao inverter e desinverter
+            {
+                aux = vet[j];
+                vet[j] = vet[i];
+                vet[i] = aux;
+                j = j - 1;
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "ª Posição: " + vet[i]);
+            }
+        }
+
+
+        //Exercício 65: Faça um programa que crie um vetor de números inteiros e calcule a média dos valores
+        //presentes apenas nas posições pares do vetor.
+        public void ExercicioSessentaCinco()
+        {
+            int soma = 0;
+            int i = 0;
+            int[] vet = new int[5];
+            //Preencher o valor
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //calcular media dos valores nos pares
+            for (i = 0; i < 5; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    soma += vet[i];
+                }
+            }
+            Console.WriteLine("A media dos valores nas posições pares é: " + soma / 3);
+        }
+
+
+        //Exercício 66: Faça um programa que crie um vetor de números inteiros e verifique se ele é simétrico
+        //(se os elementos nas extremidades são iguais, os próximos também devem ser, e assim por diante).
+        public void ExercicioSessentaSeis()
+        {
+            int[] vet = new int[5];
+            Boolean flag = false;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 4; j >= 0; j--)
                 {
                     if (vet[i] == vet[j])
                     {
-                         
+                        flag = true;
+                    }
+                    else
+                    {
+                        flag = false;
                     }
                 }
             }
-               Console.WriteLine("O numero de vezes que os numeros do vetor se repetem é: " + cont);
-            
-
+            if (flag == true)
+            {
+                Console.WriteLine("O vetor é simétrico");
+            }
+            else
+            {
+                Console.WriteLine("O vetor não é simétrico");
+            }
         }
-    }
 
 
-    //Exercício 62: Faça um programa que crie um vetor de números inteiros e
-    //verifique se ele está em ordem decrescente.
+        //Exercício 67: Faça um programa que crie um vetor de números inteiros e verifique se ele
+        //é um vetor palíndromo (se a sequência de números é a mesma lida da esquerda
+        //para a direita e da direita para a esquerda).
+        public void ExercicioSessentaSete()
+        {
+            int[] vet = new int[5];
+            Boolean flag = false;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 4; j >= 0; j--)
+                {
+                    if (vet[i] == vet[j])
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag == true)
+            {
+                Console.WriteLine("O vetor é palíndromo");
+            }
+            else
+            {
+                Console.WriteLine("O vetor não é palíndromo");
+            }
+        }
 
 
+        //Exercício 68: Faça um programa que crie dois vetores de números inteiros e verifique se eles são iguais
+        //(se possuem os mesmos elementos na mesma ordem).
+        public void ExercicioSessentaOito()
+        {
+            int[] vet1 = new int[5];
+            int[] vet2 = new int[5];
+            Boolean flag = false;
 
-    //Exercício 63: Faça um programa que crie um vetor de números inteiros e
-    //encontre o segundo maior valor presente no vetor.
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet1[i] = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet1[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            //Removendo os elementos repetidos
+            for (int i = 0; i < 5; i++) //poderia ser tambem "for (int i = 0; i < vet.Length; i++)"
+            {
+                for (int j = i + 1; j < 5; j++)
+                {
+                    if (vet1[i] == vet2[i])
+                    {
+                        flag = true;
+                    }
+                    else
+                    {
+                        flag = false;
+                    }
+                }
+            }
+            if (flag == true)
+            {
+                Console.WriteLine("Os vetores são iguais");
+            }
+            else
+            {
+                Console.WriteLine("Os vetores não são iguais");
+            }
+        }
+
+        //Exercício 69:Faça um programa que crie um vetor de números inteiros e, em seguida,
+        //substitua todos os valores negativos por zero.
+        public void ExercicioSessentaNove()
+        {
+            int i = 0;
+            int[] vet = new int[5];
+            //Preencher o valor
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for (i = 0; i < 5; i++)
+            {
+                if (vet[i] < 0)
+                {
+                    vet[i] = 0;
+                }
+            }
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine(vet[i]);
+            }
+        }
 
 
+        //Exercício 70: Faça um programa que crie um vetor de números inteiros e remova todas as ocorrências
+        //de um determinado valor no vetor. 
+        public void ExercicioSetenta(int num)
+        {
+            int i = 0;
+            int[] vet = new int[5];
+            //Preencher o valor
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine((i + 1) + "º Número: ");
+                vet[i] = Convert.ToInt32(Console.ReadLine());
+            }
 
-    //Exercício 64: Faça um programa que crie um vetor de números inteiros e
-    //inverta a ordem dos elementos desse vetor.
-
-
-
-    //Exercício 65: Faça um programa que crie um vetor de números inteiros e calcule a média dos valores
-    //presentes apenas nas posições pares do vetor.
-
-
-
-    //Exercício 66: Faça um programa que crie um vetor de números inteiros e verifique se ele é simétrico
-    //(se os elementos nas extremidades são iguais, os próximos também devem ser, e assim por diante).
-
-
-
-    //Exercício 67: Faça um programa que crie um vetor de números inteiros e verifique se ele
-    //é um vetor palíndromo (se a sequência de números é a mesma lida da esquerda
-    //para a direita e da direita para a esquerda).
-
-
-
-    //Exercício 68: Faça um programa que crie dois vetores de números inteiros e verifique se eles são iguais
-    //(se possuem os mesmos elementos na mesma ordem).
-
-
-
-    //Exercício 69:Faça um programa que crie um vetor de números inteiros e, em seguida,
-    //substitua todos os valores negativos por zero.
-
-
-
-    //Exercício 70: Faça um programa que crie um vetor de números inteiros e remova todas as ocorrências
-    //de um determinado valor no vetor. 
-
-}//fim do projeto
+            for (i = 0; i < 5; i++)
+            {
+                if (vet[i] == num)
+                {
+                    vet[i] = -1;
+                }
+            }
+            for (i = 0; i < 5; i++)
+            {
+                Console.WriteLine(vet[i]);
+            }
+        }
+    }//fim do projeto
+}
